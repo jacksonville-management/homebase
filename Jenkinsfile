@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        none
+        any
 
     stages {
         stage('Checkout') {
