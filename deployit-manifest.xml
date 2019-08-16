@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <udm.DeploymentPackage version="1.0" application="my-jacksonvilleapp">
     <deployables>
-      <jee.Ear name="/my-jacksonvilleapp" file="/my-jacksonvilleapp-1.0-SNAPSHOT.jar" />
-      <file.Folder name="my-jacksonvilleapp" file="conf" />
+      <file.Archive name="my-jacksonvilleapp" file="my-jacksonvilleapp-1.0-SNAPSHOT.jar" />
     </deployables>
   </udm.DeploymentPackage>
