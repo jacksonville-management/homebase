@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jacksonville.app.AppTest" time="0.029" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jacksonville.app.AppTest" time="0.034" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value=""/>
-    <property name="sun.jnu.encoding" value="ANSI_X3.4-1968"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/test-classes:/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/classes:/root/.m2/repository/junit/junit/4.11/junit-4.11.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/surefire/surefirebooter5683560532424846986.jar /opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/surefire 2019-08-15T18-24-55_016-jvmRun1 surefire6308816682503221301tmp surefire_02822225245812018042tmp"/>
+    <property name="sun.java.command" value="/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/surefire/surefirebooter7807042922202709817.jar /opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/surefire 2019-08-16T17-15-31_756-jvmRun1 surefire3792567184489259540tmp surefire_02341963285705108786tmp"/>
     <property name="surefire.test.class.path" value="/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/test-classes:/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/classes:/root/.m2/repository/junit/junit/4.11/junit-4.11.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/root"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/surefire/surefirebooter5683560532424846986.jar"/>
+    <property name="surefire.real.class.path" value="/opt/dashboard/jacksonville-management/homebase/my-jacksonvilleapp/target/surefire/surefirebooter7807042922202709817.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_222-b10"/>
@@ -38,7 +38,7 @@
     <property name="os.version" value="4.9.184-linuxkit"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/lib/endorsed"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="ANSI_X3.4-1968"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="localRepository" value="/root/.m2/repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
@@ -57,5 +57,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.jacksonville.app.AppTest" time="0.005"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.jacksonville.app.AppTest" time="0.001"/>
 </testsuite>
