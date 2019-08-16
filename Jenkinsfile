@@ -44,9 +44,9 @@ pipeline {
                 sh 'echo "publish to artifactory ok"'
                 // hygieiaArtifactPublishStep artifactDirectory: 'target', artifactGroup: 'com.jacksonville.app', artifactName: '*.jar', artifactVersion: "1.0-SNAPSHOT"
 		//
-		xldCreatePackage artifactsPath: 'target', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
+		xldCreatePackage artifactsPath: 'target', manifestPath: 'deployit-manifest.xml', darPath: 'my-jacksonvilleapp-1.0-SNAPSHOT-$BUILD_NUMBER.0.dar'
+		xldPublishPackage serverCredentials: 'admin', darPath: 'my-jacksonvilleapp-1.0-SNAPSHOT-$BUILD_NUMBER.0.dar'
 		sh 'ls -al' 
-		// xldPublishPackage serverCredentials: 'admin', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
             } 
         }
         stage('Deploy to DEV') {
