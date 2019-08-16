@@ -58,7 +58,7 @@ pipeline {
                     // hygieiaDeployPublishStep applicationName: 'my-jacksonvilleapp', artifactDirectory: 'target', artifactGroup: 'com.jacksonville.app', artifactName: '*.jar', artifactVersion: "1.0-SNAPSHOT", buildStatus: 'Success', environmentName: 'DEV'
 		    sh 'echo success' 
 		    // 
-		    xldDeploy serverCredentials: 'admin-credentials', environmentId: 'Environments/DEV', packageId: 'Applications/my-jacksonvilleapp/7.0'
+		    // xldDeploy serverCredentials: 'admin-credentials', environmentId: 'Environments/DEV', packageId: 'Applications/my-jacksonvilleapp/8.0'
                 }
                 failure {
                     // hygieiaDeployPublishStep applicationName: 'my-jacksonvilleapp', artifactDirectory: 'target', artifactGroup: 'com.jacksonville.app', artifactName: '*.jar', artifactVersion: "1.0-SNAPSHOT", buildStatus: 'Failure', environmentName: 'DEV'
