@@ -43,6 +43,9 @@ pipeline {
 		sh 'mvn install'
                 sh 'echo "publish to artifactory ok"'
                 // hygieiaArtifactPublishStep artifactDirectory: 'target', artifactGroup: 'com.jacksonville.app', artifactName: '*.jar', artifactVersion: "1.0-SNAPSHOT"
+		//
+		xldCreatePackage artifactsPath: 'target', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
+		xldPublishPackage serverCredentials: 'admin', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'
             } 
         }
         stage('Deploy to DEV') {
@@ -53,6 +56,8 @@ pipeline {
                 success {
                     // hygieiaDeployPublishStep applicationName: 'my-jacksonvilleapp', artifactDirectory: 'target', artifactGroup: 'com.jacksonville.app', artifactName: '*.jar', artifactVersion: "1.0-SNAPSHOT", buildStatus: 'Success', environmentName: 'DEV'
 		    sh 'echo success' 
+		    // 
+		    xldDeploy serverCredentials: 'admin', environmentId: 'Environments/Dev', packageId: 'Applications/my-jacksonvilleapp/$BUILD_NUMBER.0'
                 }
                 failure {
                     // hygieiaDeployPublishStep applicationName: 'my-jacksonvilleapp', artifactDirectory: 'target', artifactGroup: 'com.jacksonville.app', artifactName: '*.jar', artifactVersion: "1.0-SNAPSHOT", buildStatus: 'Failure', environmentName: 'DEV'
