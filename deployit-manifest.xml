@@ -3,5 +3,6 @@
     <deployables>
       <file.Archive name="my-jacksonvilleapp" file="my-jacksonvilleapp-1.0-SNAPSHOT.jar" />
         <targetPath>/var/tmp/</targetPath>
+      </file.Archive>
     </deployables>
   </udm.DeploymentPackage>
