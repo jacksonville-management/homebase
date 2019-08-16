@@ -2,6 +2,6 @@
   <udm.DeploymentPackage version="9.0" application="my-jacksonvilleapp">
     <deployables>
       <file.Archive name="my-jacksonvilleapp" file="my-jacksonvilleapp-1.0-SNAPSHOT.jar" />
-      <targetPath>/var/tmp/</targetPath>
+        <targetPath>/var/tmp/</targetPath>
     </deployables>
   </udm.DeploymentPackage>
