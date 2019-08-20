@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <udm.DeploymentPackage version="14.0" application="my-jacksonvilleapp">
+  <udm.DeploymentPackage version="15.0" application="my-jacksonvilleapp">
     <deployables>
-      <file.Archive name="my-jacksonvilleapp" file="my-jacksonvilleapp-1.1-SNAPSHOT.jar">
+      <file.Archive name="my-jacksonvilleapp" file="my-jacksonvilleapp-1.2-SNAPSHOT.jar">
         <targetPath>/var/tmp/</targetPath>
       </file.Archive>
     </deployables>
