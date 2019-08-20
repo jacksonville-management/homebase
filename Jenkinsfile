@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
 		sh 'echo checkout'
-		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/jacksonville-management/homebase']]])
+		// checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/jacksonville-management/homebase']]])
             }
         }    
         stage('Clean') {
